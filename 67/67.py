@@ -74,7 +74,6 @@ def get_tree(tree_file):
         for i in tier:
             new_tier.append(int(i))
         tree.append(new_tier)
-    print tree
     return tree
 
 
