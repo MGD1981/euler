@@ -20,7 +20,7 @@ def unit_division(den, num=1):
         dec.append((int(num/den),num))
         num = num - (den * dec[-1][0])
         if dec[-1] in dec [:-1]:
-            return dec[dec.find(dec[-1]):-1]
+            return dec[dec.index(dec[-1]):-1]
         if num == 0:
             return dec 
 
@@ -29,8 +29,7 @@ max_length = 0
 max_den = 0
 for d in range(2,1001):
     dec = unit_division(d)
-    print d, dec
     if len(dec) > max_length:
         max_length = len(dec)
         max_den = d
-print d, max_den
+print max_den
