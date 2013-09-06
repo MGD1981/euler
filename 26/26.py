@@ -32,4 +32,4 @@ for d in range(2,1001):
     if len(dec) > max_length:
         max_length = len(dec)
         max_den = d
-print max_den
+print max_den, max_length
